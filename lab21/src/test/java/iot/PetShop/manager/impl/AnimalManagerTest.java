@@ -80,7 +80,7 @@ class AnimalManagerTest {
         Assertions.assertFalse(sortedByDailyAmountOfFeed.isEmpty());
         Assertions.assertFalse(sortedByDailyAmountOfFeedDec.isEmpty());
         Assertions.assertEquals(sortedByDailyAmountOfFeed.size(), animalList.size());
-        Assertions.assertEquals(sortedByDailyAmountOfFeed.size(), animalList.size());
+        Assertions.assertEquals(sortedByDailyAmountOfFeedDec.size(), animalList.size());
         for (int i = 0; i<sortedByDailyAmountOfFeed.size() - 1; i++) {
             Assertions.assertTrue(sortedByDailyAmountOfFeed.get(i).getDailyAmountOfFeedInGrams() < sortedByDailyAmountOfFeed.get(i + 1).getDailyAmountOfFeedInGrams());
             Assertions.assertFalse(sortedByDailyAmountOfFeedDec.get(i).getDailyAmountOfFeedInGrams() > sortedByDailyAmountOfFeedDec.get(i + 1).getDailyAmountOfFeedInGrams());

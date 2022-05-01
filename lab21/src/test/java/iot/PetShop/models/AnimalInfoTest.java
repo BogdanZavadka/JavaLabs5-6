@@ -14,7 +14,7 @@ class AnimalInfoTest {
     @Test
     void testEquals() {
         var animalInfo2 = new AnimalInfo("dog", "dogName1", 12, "High-protein", 500, 2000, 100, 20, 20);
-        Assertions.assertTrue(result.equals(animalInfo2));
+        Assertions.assertTrue(result.equalsClasses(animalInfo2));
     }
 
     @Test

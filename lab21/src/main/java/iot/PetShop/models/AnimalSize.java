@@ -11,4 +11,12 @@ public class AnimalSize {
     protected double lengthInCm;
     protected double widthInCm;
     protected double weightInKg;
+
+    public String getHeaders() {
+        return "lengthInCm, widthInCm, weightInKg, ";
+    }
+
+    public String toCSV() {
+        return lengthInCm + ", " + widthInCm + ", " + weightInKg + ", ";
+    }
 }

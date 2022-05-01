@@ -1,0 +1,5 @@
+lengthInCm, widthInCm, weightInKg, animalType, animalName, animalAgeInMonth, feedType, dailyAmountOfFeedInGrams, priceInUAH
+100.0, 20.0, 20.0, dog, dogName1, 12, High-protein, 500.0, 2000.0
+60.0, 10.0, 5.0, cat, catName1, 10, High-protein, 200.0, 1500.0
+5.0, 3.0, 0.01, hamster, hamsterName1, 3, Cereal, 10.0, 500.0
+5.0, 3.0, 0.01, hamster, hamsterName2, 4, Cereal, 11.0, 600.0
