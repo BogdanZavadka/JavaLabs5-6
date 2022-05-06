@@ -69,7 +69,7 @@ class AnimalManagerTest {
         Assertions.assertEquals(sortedByPriceDec.size(), animalList.size());
         for (int i = 0; i<sortedByPrice.size() - 1; i++){
             Assertions.assertTrue(sortedByPrice.get(i).getPriceInUAH() < sortedByPrice.get(i+1).getPriceInUAH());
-            Assertions.assertFalse(sortedByPriceDec.get(i).getPriceInUAH() > sortedByPriceDec.get(i+1).getPriceInUAH());
+            Assertions.assertTrue(sortedByPriceDec.get(i).getPriceInUAH() > sortedByPriceDec.get(i+1).getPriceInUAH());
         }
     }
 
@@ -83,7 +83,7 @@ class AnimalManagerTest {
         Assertions.assertEquals(sortedByDailyAmountOfFeedDec.size(), animalList.size());
         for (int i = 0; i<sortedByDailyAmountOfFeed.size() - 1; i++) {
             Assertions.assertTrue(sortedByDailyAmountOfFeed.get(i).getDailyAmountOfFeedInGrams() < sortedByDailyAmountOfFeed.get(i + 1).getDailyAmountOfFeedInGrams());
-            Assertions.assertFalse(sortedByDailyAmountOfFeedDec.get(i).getDailyAmountOfFeedInGrams() > sortedByDailyAmountOfFeedDec.get(i + 1).getDailyAmountOfFeedInGrams());
+            Assertions.assertTrue(sortedByDailyAmountOfFeedDec.get(i).getDailyAmountOfFeedInGrams() > sortedByDailyAmountOfFeedDec.get(i + 1).getDailyAmountOfFeedInGrams());
         }
     }
 

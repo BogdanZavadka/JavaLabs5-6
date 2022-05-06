@@ -2,7 +2,6 @@ package iot.PetShop.models;
 
 import lombok.Getter;
 
-import java.util.Objects;
 @Getter
 public class AnimalInfo extends AnimalSize {
     private final String animalType;
@@ -12,7 +11,8 @@ public class AnimalInfo extends AnimalSize {
     private final double dailyAmountOfFeedInGrams;
     private final double priceInUAH;
 
-    public AnimalInfo(final String animalType, final String animalName, final int animalAgeInMonth, final String feedType, final double dailyAmountOfFeedInGrams, final double priceInUAH, final double lengthInCm, final double widthInCm, final double weightInKg) {
+    public AnimalInfo(final String animalType, final String animalName, final int animalAgeInMonth, final String feedType,
+                      final double dailyAmountOfFeedInGrams, final double priceInUAH, final double lengthInCm, final double widthInCm, final double weightInKg) {
         this.animalType = animalType;
         this.animalName = animalName;
         this.animalAgeInMonth = animalAgeInMonth;

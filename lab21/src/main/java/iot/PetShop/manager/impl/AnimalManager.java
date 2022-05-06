@@ -5,7 +5,6 @@ import iot.PetShop.models.AnimalInfo;
 
 import java.util.*;
 import java.util.Comparator;
-import java.util.stream.Collectors;
 
 public class AnimalManager implements InterfaceAnimalManager {
 
@@ -73,7 +72,7 @@ public class AnimalManager implements InterfaceAnimalManager {
 
     @Override
     public List<AnimalInfo> sortByPrice(final boolean sortByDescending) {
-        List<AnimalInfo> sortedByPrice = allAnimals;
+        List<AnimalInfo> sortedByPrice = new LinkedList<>(allAnimals);
         sortedByPrice.sort(Comparator.comparing(AnimalInfo::getPriceInUAH));
         if (sortByDescending) {
             Collections.reverse(sortedByPrice);
@@ -85,7 +84,7 @@ public class AnimalManager implements InterfaceAnimalManager {
 
     @Override
     public List<AnimalInfo> sortByDailyAmountOfFeed(final boolean sortByDescending) {
-        List<AnimalInfo> sortedByByDailyAmountOfFeed = allAnimals;
+        List<AnimalInfo> sortedByByDailyAmountOfFeed = new LinkedList<>(allAnimals);
         sortedByByDailyAmountOfFeed.sort(Comparator.comparing(AnimalInfo::getDailyAmountOfFeedInGrams));
         if (sortByDescending) {
             Collections.reverse(sortedByByDailyAmountOfFeed);

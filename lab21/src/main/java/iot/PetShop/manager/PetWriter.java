@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-public class PetWriter {
+public final class PetWriter {
+    private PetWriter() { }
     public static void writeToFile(final List<AnimalInfo> animalList) throws IOException {
         try (FileWriter writer = new FileWriter("result.csv", StandardCharsets.UTF_8)) {
             writer.write(animalList.get(0).getHeaders());
