@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PetWriterTest {
 
     @Test
-    void writeToFile() throws IOException {
+    void testWriteToFile() throws IOException {
         List<AnimalInfo> animalList = new LinkedList<>();
         var animalManager = new AnimalManager();
         AnimalInfo animalInfo1 = new AnimalInfo("dog", "dogName1", 12, "High-protein", 500, 2000, 100, 20, 20);
