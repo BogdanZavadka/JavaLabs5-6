@@ -13,7 +13,7 @@ class RedactorTest {
         String text = "Firstly, you need to know how to work with a computer, which is a hard skill. " +
                 "Everyone who works in the IoT sphere has to write code for machines or other devices that is possible only if you know some programming languages and opportunities of the computer. " +
                 "Consequently, this is a key skill that everyone should have working with IoT.";
-        String actualText = redactor.checkText(text);
+        String actualText = redactor.changeLastLetters(text);
         Assertions.assertFalse(actualText.isEmpty());
         String expectedText = "FirstlY, yoU neeD tO knoW hoW tO worK witH A computeR, whicH iS A harD skilL. " +
                 "EveryonE whO workS iN thE IoT spherE haS tO writE codE foR machineS oR otheR deviceS thaT iS possiblE onlY iF yoU knoW somE programminG languageS anD opportunitieS oF thE computeR. " +
